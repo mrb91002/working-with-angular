@@ -1,2 +1,16 @@
 <!DOCTYPE html>
 <h1>This is this the second page!</h1>
+<p>
+  $scope.name is set to: {{name}}
+</p>
+<p>
+  Nameserice.Name is set to: {{nameService.name}}
+</p>
+<p>
+  The best car according to nameService is: {{nameService.car}}
+</p>
+<p>
+  <input type="text" name="name" ng-model="nameService.name">
+</p>
+
+<directive-one name="{{nameService.name2}}" name-service="nameService" test-function="testFunction(name, string)"></directive-one>
